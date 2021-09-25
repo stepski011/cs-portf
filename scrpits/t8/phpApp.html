@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Preskus HTML-PHP-MySQL</title>
+    </head>
+    <body>
+        <br>
+        Vpogled v bazo - vsi zapisi
+        <form action="vpogledvse.php" method="post" enctype="multipart/form-data">
+            <input type="submit" name="submit" value="Seznam">
+        </form>
+        <br>
+        Vpogled v bazo - posamezni zapisi
+        <form action="vpogled_ena_slika.php" method="post" enctype="multipart/form-data">
+            ID : <input type="text" name="sifra">
+            <input type="submit" name="submit" value="Vpogled">
+        </form>
+        <br>
+        Dodajanje v bazo
+        <form action="dodajanje.php" method="post" enctype="multipart/form-data">
+            <label for="file">Izberi datoteko:</label>
+            <input type="file" name="file" id="file"><br>
+            <input type="submit" name="submit" value="Vpis v bazo">
+        </form>
+        <br>
+        Spreminjanje baze
+        <form action="spreminjanje.php" method="post" enctype="multipart/form-data">
+            <label for="file">Izberi datoteko:</label>
+            <input type="file" name="file" id="file"><br>
+            ID : <input type="text" name="sifra">
+            <input type="submit" name="submit" value="Vpis v bazo">
+        </form>
+    </body>
+    </html>
